@@ -8,7 +8,7 @@ import Transition from './Transition';
 import { classNamesShape } from './utils/PropTypes';
 
 const addClass = (node, classes) => classes && classes.split(' ').forEach(c => addOneClass(node, c));
-const removeClass = (node, classes) => classes & classes.split(' ').forEach(c => removeOneClass(node, c));
+const removeClass = (node, classes) => classes && classes.split(' ').forEach(c => removeOneClass(node, c));
 
 const propTypes = {
   ...Transition.propTypes,
